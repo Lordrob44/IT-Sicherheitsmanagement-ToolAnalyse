@@ -17,18 +17,18 @@
     bibtotoc,           %
     %parskip            % parskip-, parskip*, parskip+
 ]%{scrreprt}
-{article}
+{scrartcl}
 
 %\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
-\usepackage{ngerman}
+\usepackage[ngerman]{babel}
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{float}
 \usepackage{listings}
 \usepackage{color}
 \usepackage{tabularx}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{tabu}
 \usepackage{booktabs}
 \usepackage[table]{xcolor}
@@ -70,8 +70,12 @@
 \pagenumbering{arabic}
 
 \include{einleitung}
-
 %insert other .tex here
+\include{hochschule}
+\include{sidoc}
+\include{porgrammeAndre}
+\include{indart}
+\include{dhc}
 
 \include{fazit}
 
@@ -118,6 +122,6 @@ wurden ausdrücklich als solche gekennzeichnet.%\\[2ex]
 --------------------------------- \newline
 \vspace{1cm}\noindent
 --------------------------------- \newline
-Görlitz, den 01. Dezember 2014
+Görlitz, \today
 
 \end{document}
