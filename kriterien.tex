@@ -1,6 +1,7 @@
 \section{Bewertungskriterien}
 Um alle untersuchten Programme einheitlich miteinander vergleichen zu können, wurde eine Liste von Bewertungskriterien erarbeitet, welche im folgenden kurz erklärt werden soll.\\
-Die Bewertungsskala reicht von 0 bis 10, in aufsteigender Wertigkeit. Soweit nicht gesondert erwähnt, wird ein Merkmal mit 0 gewertet, wenn es nicht vorhanden ist und mit 10, wenn es wirklich gut ausgearbeitet ist.
+Die Bewertungsskala reicht von 0 bis 10, in aufsteigender Wertigkeit. Soweit nicht gesondert erwähnt, wird ein Merkmal mit 0 gewertet, wenn es nicht vorhanden ist und mit 10, wenn es wirklich gut ausgearbeitet ist.\\
+Um die abschließende Wertung für den Einsatz in der Hochschule bzw. in der Lehre zu ermitteln, werden die Rohwertungen in einer Kategorie mit einer Gewichtung multipliziert, welche Tabelle ~\ref{tab:gewichtung} zu entnehmen ist. Die Gesamtwertung wird dann prozentual von der maximal möglichen Punktzahl angegeben.
 \begin{itemize}
 	\item \textit{Wizard} bewertet, ob es eine Führung durch das Programm mittels Wizards gibt und wie gut diese umgesetzt ist. 10 = gut umgesetzte benutzerfreundliche Wizardführung durch alle wichtigen Programmaspekte.
 
@@ -39,5 +40,75 @@ Die Bewertungsskala reicht von 0 bis 10, in aufsteigender Wertigkeit. Soweit nic
 	\item \textit{Spezielle Zielgruppe} bewertet, ob das Tool eine spezielle Zielgruppe hat, bzw. ob es an die Bedürfnisse gewisser Zielgruppen anpassbar ist. Denkbar wären Spezialisierungen auf die Lehre, Betriebswirtschaft, etc.
 	\item \textit{Pflege/Weiterentwicklung} bewertet, ob das Tool noch weiterentwickelt bzw. gepflegt wird.0 = Weiterentwicklung eingestellt, 10 = ja, häufiger, als es Änderungen an den GS-Materialien gibt.
 
-
+\begin{table}[h!tb]
+	%\centering
+	\begin{tabular}{|p{0.5\textwidth}|p{0.2\textwidth}|p{0.2\textwidth}|}
+		\hline 
+		Kriterium & Hochschule & Lehre\\ 
+		\hline 
+		\textbf{GUI}& &\\
+		\hline
+		Wizard & 3 & 4\\
+		\hline 
+		Infrastrukturdarstellung & 8 & 8 \\
+		\hline 
+		Netzpläne & 5 & 5 \\
+		\hline 
+		Prozessflüsse & 5 & 5 \\
+		\hline 
+		Schnelles Einpflegen von Änderungen & 8 & 8 \\
+		\hline
+		\textbf{Objektrelationen} & &\\
+		\hline 
+		Doppelseitige Verlinkungen & 5 & 2 \\
+		\hline 
+		Vererbung & 9 & 9 \\
+		\hline 
+		Gruppierungen & 7 & 2 \\
+		\hline 
+		\textbf{Funktionalität} & & \\
+		\hline 
+		Aktuelle BSI-Standards & 10 & 10\\
+		\hline  
+		Erweiterbarkeit der Klassifizierungen & 7 & 7 \\
+		\hline 
+		Individuelle Beschreibungen & 8 & 4 \\
+		\hline 
+		Sicherheitsverstöße markieren & 9 & 7 \\
+		\hline
+		Bewertung des Sicherheitsstatus & 10 & 8 \\
+		\hline
+		Export von Berichten & 8 & 0 \\
+		\hline
+		GS-Tool import & 1 & 0 \\
+		\hline
+		Sicherheit des Tools an sich & 10 & 0\\
+		\hline
+		Risikobewertung & 10 & 1 \\
+		\hline
+		\textbf{System}& & \\
+		\hline
+		Verteiltes Arbeiten & 2 & 0 \\
+		\hline
+		Rechtevergabe & 7 & 0 \\
+		\hline
+		Kosten & 9 & 10\\
+		\hline
+		Support & 7 & 3 \\
+		\hline
+		Zertifizierung & 10 & 0 \\
+		\hline
+		Dokumentation & 9 & 10 \\
+		\hline
+		Marktpräsenz & 7 & 4 \\
+		\hline
+		Spezielle Zielgruppe & 4 & 4 \\
+		\hline
+		Pflege/Weiterentwicklung & 10 & 10 \\
+		\hline
+		
+	\end{tabular} 
+	\caption{Gewichtung nach Einsatz}
+	\label{tab:gewichtung}
+\end{table}
 \end{itemize}
