@@ -4,13 +4,13 @@
 CRISAM (Corporate Risk Security Application Method) wurde von der Firma Calpana Business Consulting gmbh als Standard im Risikomanagement entwickelt. CRISAM® als Risikomanagement Methode folgt einem sechsstufigen Vorgehensmodell (gemäß ISO 31000). Unser Ziele mit der CRISAM® Risikomanagement Methode ist es,  das komplexe Thema „Risiko“ einfach handhabbar zu machen, Risiken aus der Bauchhöhle herauszuholen und präzise bewerten zu können, Chancen und Risiken im Unternehmen ganzheitlich und wertorientiert darzustellen, sowie Bewertungen und daraus resultierende Konsequenzen nachvollziehbar zu machen.
 \\
 
-Zu sehen ist die Risikomanagement Methode mit ihrem sechsstufigen Vorgehensmodell in Abbildung~\ref{fig:bsp}
+Zu sehen ist die Risikomanagement Methode mit ihrem sechsstufigen Vorgehensmodell in Abbildung~\ref{fig:Vorgehensmodell}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale =0.5 ]{images/Vorgehensmodell}
 \caption{Crisam Vorgehensmodell}
-\label{fig:bsp}
+\label{fig:Vorgehensmodell}
 \end{figure}
 
 
@@ -108,7 +108,7 @@ Die Strukturierung erfolgt immer als Baumstruktur, wobei in der obersten Verzwei
 	\centering
 	\includegraphics[scale =1 ]{images/Modellierung.png}
 	\caption{Modellierung oberste Ebene}
-	\label{fig:bsp}
+	\label{fig:Modellierung}
 \end{figure}
 Nachdem im Rahmen der Stufe 2: Geltungsbereich, die zu betrachtenden Geschäftsprozesse oder Unternehmenseinheiten bestimmt wurden, müssen diese entsprechend im Baum modelliert werden. Hierzu stehen die folgenden Bausteine zur Verfügung: Geschäftsprozess, Kernprozess, Management-Prozess, Support-Prozess, Teilprozess, Aufgabe, Aktivität.
 Folgende Abbildung soll einige mögliche Konstellationen zeigen. Die Modellierung dieser Teilstruktur kann in beliebiger Tiefe erfolgen. Schlussendlich soll die Modellierung auf dieser Ebene die Realität möglichst getreu abbilden.
@@ -117,17 +117,17 @@ Folgende Abbildung soll einige mögliche Konstellationen zeigen. Die Modellierun
 	\centering
 	\includegraphics[scale =1 ]{images/weiterebenen.png}
 	\caption{Modellierung weitere Ebenen}
-	\label{fig:bsp}
+	\label{fig:weiterebenen}
 \end{figure}
 
 \paragraph{IT-Services}
-Die in Stufe 2 definierten Business IT-Services bauen jeweils auf einem Technical IT-Service auf, der die entsprechende Applikation darstellt. Ein Technical IT-Service steht in Abhängigkeit zu der Applikation (z.B. Zeiterfassung-Applikation) und dem IT-System (z.B. Server004) auf dem diese betrieben wird. Dies wird in Abbildung 5 - Technical IT-Service Zeiterfassungs-Service dargestellt.
+Die in Stufe 2 definierten Business IT-Services bauen jeweils auf einem Technical IT-Service auf, der die entsprechende Applikation darstellt. Ein Technical IT-Service steht in Abhängigkeit zu der Applikation (z.B. Zeiterfassung-Applikation) und dem IT-System (z.B. Server004) auf dem diese betrieben wird. Dies wird in Abbildung~\ref{fig:Technical} - Technical IT-Service Zeiterfassungs-Service dargestellt.
 \newpage
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale =1 ]{images/Technical.png}
 	\caption{Technical IT-Service Zeiterfassungs-Service}
-	\label{fig:bsp}
+	\label{fig:Technical}
 \end{figure}
 \paragraph{Modellierung der IT-Prozesse nach ITIL v2. COBIT bzw. ISO 27001}
 In der folgenden Abbildung sind die Objekte „IT-Prozesse“, „IT-Prozesse Administrativ“, „IT-Prozesse Operativ“ und „IT-Prozesse Strategisch“ lediglich als Strukturelemente gedacht (dazu werden Container-Bausteine verwendet). Diese Anwendung von Objekten als Strukturelemente ist nicht zwingend notwendig, empfiehlt sich jedoch im Hinblick auf eine gute Übersichtlichkeit und optimale Auswertungsmöglichkeiten. Die Verwendung der untenstehenden Bausteine, ausgenommen „Langzeitarchivierung“ ist zwingend notwendig.
@@ -137,7 +137,7 @@ Soll die Langzeitarchivierung in die Risikobetrachtung mit aufgenommen werden, s
 	\centering
 	\includegraphics[scale =1 ]{images/prozesse.png}
 	\caption{Modellierung IT-Prozesse}
-	\label{fig:bsp}
+	\label{fig:prozesse}
 \end{figure}
 \paragraph{Modellierung eines Server-Systems}
 Für das Objekt Server Betriebssystem kommen die Bausteine „Betriebssystem“.Für das Objekt „Server Hardware“ ist der Baustein „Server-Hardware“, für das Objekt „Serverraum“ ist der Baustein „Serverraum“, für das Objekt „Gebäude“ ist der Baustein „Gebäude“ und für das Objekt „Stromversorgung“ ist der Baustein „Stromversorgung“ zu verwenden.
@@ -145,7 +145,7 @@ Für das Objekt Server Betriebssystem kommen die Bausteine „Betriebssystem“.
 	\centering
 	\includegraphics[scale =1 ]{images/server.png}
 	\caption{Modellierung Server}
-	\label{fig:bsp}
+	\label{fig:server}
 \end{figure}
 
 \subsubsection{Stufe 4/5: Risikomanagement}
@@ -165,7 +165,7 @@ Verbesserungsvorschläge werden mit den folgenden Schritten identifiziert:\\
 Anhand des Berichtes „GAP-Analyse“ lässt sich erkennen, welche Objekte näher betrachtet werden müssen, um entsprechende Verbesserungsvorschläge zu identifizieren.
 \paragraph{Maßnahmen definieren}
 Die zuvor identifizierten Kontrollziele mit den dazugehörigen Verbesserungsvorschlägen werden nun nach sinnvollen Kriterien zu Maßnahmen zusammengefasst. Diese Kriterien sind üblicherweise inhaltlicher, technischer oder strategischer Natur. Technische Maßnahmen wären bspw. „Bauliche Maßnahmen“, „Release Management verbessern“, „Server Hardware verbessern“, etc.
-Dazu ist es zuerst notwendig eine neue Maßnahme anzulegen (siehe Abbildung 6: Risikomanagement – Maßnahmen). Im nächsten Schritt werden die einzelnen Maßnahmen näher untersucht und hinsichtlich:\\
+Dazu ist es zuerst notwendig eine neue Maßnahme anzulegen. Im nächsten Schritt werden die einzelnen Maßnahmen näher untersucht und hinsichtlich:\\
 - Dringlichkeit,\\
 - Kosten (grobe Kostenabschätzung),\\
 - Kategorie (technisch, organisatorisch, rechtlich)
